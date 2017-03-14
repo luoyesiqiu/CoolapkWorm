@@ -30,7 +30,7 @@ public class Main {
 	private static MyQueue<String> userNameQueue=new MyQueue<>();
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		userUrlQueue.put("http://coolapk.com/u/408649/contacts");//入口链接
+		userUrlQueue.put("http://coolapk.com/u/12202/contacts");//入口链接
 		java.io.File f=new java.io.File(SAVE_PAYH);
 		//如果文件夹不存在，则创建
 		if(!f.exists())
@@ -89,7 +89,6 @@ public class Main {
 			//队列空了，isRun=false
 			isRun=false;
 		}
-
 	}
 	/**
 	 * 获取图片并保存到本地
@@ -150,7 +149,7 @@ public class Main {
 			while (!userHeadUrlQueue.isEmpty()||isRun) {
 				try {
 					String imgUrl=userHeadUrlQueue.poll();
-					imgUrl=imgUrl.replaceAll("middle", "big");
+					imgUrl=imgUrl.replaceAll("middle", "big");//替换链接，取大图
 					String userName=userNameQueue.poll();
 					if(imgUrl==null||userName==null)
 						continue;
