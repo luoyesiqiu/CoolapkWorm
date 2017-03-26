@@ -1,5 +1,5 @@
-#CoolapkWorm
+# CoolapkWorm
 
-酷安头像爬取
+閰峰畨澶村儚鐖彇
 
-原理参见：http://blog.csdn.net/e_one/article/details/60876076
+鍘熺悊鍙傝锛歨ttp://blog.csdn.net/e_one/article/details/60876076
